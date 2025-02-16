@@ -5,15 +5,15 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col  space-y-4 w-screen">
+    <div className="flex flex-col md:p-8  space-y-4 w-screen">
       <div className="text-center">
       <h2 className="text-center text-white z-10 relative text-2xl font-bold font-Roboto mt-40">INSTALLATION</h2>
       </div>
-      <div className="bg-white z-10 relative mt-30 ml-5 mr-5 mb-30 pt-10 rounded-2xl">
-      <FontAwesomeIcon icon={faArrowLeft} className="text-black flex absolute ml-10 -mt-5 font-light text-2xl" />
-      <div className="text-center flex justify-between ml-20 mr-20">
-        <h2 className= "flex font-bold text-2xl" style={{ color: '#3a2d4a' }}>Welcome,<p className="text-black font-normal">john</p></h2>
-        <h3 className="font-bold text-1xl">Central Dashboard</h3>
+      <div className="bg-white z-10 rounded relative mb-20 md:rounded-2xl">
+      <FontAwesomeIcon icon={faArrowLeft} className="text-black flex  ml-5 md:ml-10 -pt-10 text-2xl" />
+      <div className="text-center flex justify-between ml-5 mr-5 mb-10 md:ml-20 md:mr-20">
+        <h2 className= "flex font-bold md:text-2xl" style={{ color: '#3a2d4a' }}>Welcome,<p className="text-black font-normal">john</p></h2>
+        <h3 className="font-bold md:text-2xl">Central Dashboard</h3>
       </div>
       {/* Left and Right Text with Buttons */}
       <div className="flex justify-center items-center space-x-8 max-md:flex-col " style={{ gap: 30 }}>

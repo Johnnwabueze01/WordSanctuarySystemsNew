@@ -8,7 +8,7 @@ import Members from "./Members";
 import Vmembers from "./Vmembers";
 import Projects from "./Projects";
 import logo from "./asset/logo.png"
-import background from "../public/background.jpg"
+import background from "/background.jpg"
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
       </nav>
       {/* Main Content */}
       <div className=" flex-grow flex items-center justify-center" style={{
-      background:' linear-gradient(180deg, #3A2D4A 37.5%, #312E87 100%)'
+      background: 'linear-gradient(180deg, #3A2D4A 37.5%, #312E87 100%)'
 
 
       }}>
@@ -39,11 +39,37 @@ const App = () => {
         }}
         >
           <footer>
-            <div className="text-center">
+            <div className="text-center ml-30">
             <img src={logo} alt="" className="h-13"/>
             </div>
-            <div className="text-center justify-between">
-            <table className="w-full text-white mb-10 md:col-auto">
+            <div className="text-center justify-between text-white">
+              <div className="flex justify-between ml-40 mr-40">
+                <div className="text-center">
+                  <h2>CONNECT WITH US</h2>
+                  <p>Watch Online</p>
+                  <p>Central Prayer</p>
+                  <p>Wealth Nation</p>
+                  <p>Global</p>
+                  <p>Operation One Soul</p>
+                </div>
+                <div className="text-center">
+                  <h2>CONNECT WITH US</h2>
+                  <p>Watch Online</p>
+                  <p>Central Prayer</p>
+                  <p>Wealth Nation</p>
+                  <p>Global</p>
+                  <p>Operation One Soul</p>
+                </div>
+                <div className="text-center">
+                  <h2>CONNECT WITH US</h2>
+                  <p>Watch Online</p>
+                  <p>Central Prayer</p>
+                  <p>Wealth Nation</p>
+                  <p>Global</p>
+                  <p>Operation One Soul</p>
+                </div>
+              </div>
+            {/*<table className="w-full text-white mb-10 md:col-auto">
         <thead>
           <tr>
             <th className="text-1xl">CONNECT WITH US</th>
@@ -75,7 +101,7 @@ const App = () => {
             
           </tr>
           </tbody>
-          </table>
+          </table>*/}
           <p className="text-white text-1xl">Copyright 2025 | www.wordsanctuaryglobal.com | All Rights Reserved | Terms & Conditions | Privacy Policy | Cookies Policy</p>
             </div>
             </footer>

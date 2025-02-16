@@ -10,35 +10,35 @@ import { faArrowTrendUp } from "@fortawesome/free-solid-svg-icons";
 const Department = () => {
 
   return (
-    <div className="p-8 relative w-screen">
+    <div className="md:p-8 w-screen">
       <div className="text-center">
       <h2 className="text-white z-10 relative text-2xl font-bold font-Roboto mt-40">DEPARTMENT</h2>
       </div>
-      <div className="bg-white m-10 rounded-2xl">
-      <div className="items-center mb-4">
+      <div className="bg-white md:rounded-2xl relative">
+      <div className="items-center">
         <Link
         to="/" 
         >
         <FontAwesomeIcon icon={faArrowLeft} className="text-black flex absolute ml-5 text-2xl mt-3" />
         </Link>
-              <div className="text-center flex justify-between ml-20 mr-20">
-                <h2 className= "flex font-bold text-2xl mt-10" style={{ color: '#3a2c4a' }}>Welcome,<p className="text-black font-normal">john</p></h2>
+              <div className="text-center flex justify-between md:ml-20 md:mr-20">
+                <h2 className= "flex font-bold md:text-2xl mt-10" style={{ color: '#3a2c4a' }}>Welcome,<p className="text-black font-normal">john</p></h2>
                 <h3 className="font-bold text-1xl mt-10">Central Dashboard</h3>
               </div>
-        <h1 className="text-2xl font-bold text-center mt-20" style={{ color: '#3A2C4A' }}>Add Department</h1>
+        <h1 className="text-2xl font-bold text-center mt-20 mb-5" style={{ color: '#3A2C4A' }}>Add Department</h1>
         <Link
           to="/department/cdepartment"
-          className="text-black px-4 py-2 rounded flex justify-center items-center" style={{ color: '#3A2C4A' }}
+          className="text-black  rounded flex justify-center items-center mb-5" style={{ color: '#3A2C4A' }}
         >
           <FontAwesomeIcon icon={faPlus} className="mr-2 text-2xl pt-1 pb-1 pl-5 pr-5  rounded-2xl" style={{ border: '2px solid #3A2C4A' }} />
         </Link>
         <div className="text-center flex justify-center">
-        <h2 className="text-white px-4 py-2 w-50 h-15 flex items-center justify-center" style={{ background: '#312E87' }}>Previously Added</h2>
+        <h2 className="text-white  w-50 h-15 flex items-center justify-center mb-5" style={{ background: '#312E87' }}>Previously Added</h2>
         </div>
       </div>
 
       {/* Table */}
-      <table className="w-full">
+      <table className="mb-20 md:w-full">
         <thead>
           <tr>
             <th className="text-1xl">Departments</th>
@@ -49,10 +49,32 @@ const Department = () => {
         </thead>
         <tbody>
               <tr>
-                <td className=" px-4 py-2 text-center">Choir</td>
-                <td className=" b px-4 py-2 text-center">15</td>
-                <td className=" px-4 py-2 text-center">20%  <FontAwesomeIcon icon={faArrowTrendDown} style={{ color: '#3A2C4A' }} /> </td>
-                <td className=" px-4 py-2 text-center">
+                <td className=" text-center">Choir</td>
+                <td className=" text-center">15</td>
+                <td className=" text-center">20%  <FontAwesomeIcon icon={faArrowTrendDown} style={{ color: '#3A2C4A' }} /> </td>
+                <td className=" text-center">
+                  <button className=" text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td className="  text-center">Evangelism</td>
+                <td className="  text-center">10</td>
+                <td className="  text-center">10% <FontAwesomeIcon icon={faArrowTrendUp} style={{ color: '#3A2C4A' }} /></td>
+                <td className="  text-center">
+                  <button className=" text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td className="  text-center">Drama</td>
+                <td className="  text-center">12</td>
+                <td className="  text-center">25% <FontAwesomeIcon icon={faArrowTrendDown} style={{ color: '#3A2C4A' }} /></td>
+                <td className="  text-center">
                   <button className="px-3 py-1 text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
                   >
                     View
@@ -60,10 +82,10 @@ const Department = () => {
                 </td>
               </tr>
               <tr>
-                <td className=" px-4 py-2 text-center">Evangelism</td>
-                <td className=" b px-4 py-2 text-center">10</td>
-                <td className=" px-4 py-2 text-center">10% <FontAwesomeIcon icon={faArrowTrendUp} style={{ color: '#3A2C4A' }} /></td>
-                <td className=" px-4 py-2 text-center">
+                <td className="  text-center">Children</td>
+                <td className="  text-center">10</td>
+                <td className="  text-center">1% <FontAwesomeIcon icon={faArrowTrendDown} style={{ color: '#3A2C4A' }} /></td>
+                <td className="  text-center">
                   <button className="px-3 py-1 text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
                   >
                     View
@@ -71,32 +93,10 @@ const Department = () => {
                 </td>
               </tr>
               <tr>
-                <td className=" px-4 py-2 text-center">Drama</td>
-                <td className=" b px-4 py-2 text-center">12</td>
-                <td className=" px-4 py-2 text-center">25% <FontAwesomeIcon icon={faArrowTrendDown} style={{ color: '#3A2C4A' }} /></td>
-                <td className=" px-4 py-2 text-center">
-                  <button className="px-3 py-1 text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
-                  >
-                    View
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td className=" px-4 py-2 text-center">Children</td>
-                <td className=" b px-4 py-2 text-center">10</td>
-                <td className=" px-4 py-2 text-center">1% <FontAwesomeIcon icon={faArrowTrendDown} style={{ color: '#3A2C4A' }} /></td>
-                <td className=" px-4 py-2 text-center">
-                  <button className="px-3 py-1 text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
-                  >
-                    View
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td className=" px-4 py-2 text-center">Teens</td>
-                <td className=" b px-4 py-2 text-center">7</td>
-                <td className=" px-4 py-2 text-center">15% <FontAwesomeIcon icon={faArrowTrendUp} style={{ color: '#3A2C4A' }} /></td>
-                <td className=" px-4 py-2 text-center">
+                <td className="  text-center">Teens</td>
+                <td className="  text-center">7</td>
+                <td className="  text-center">15% <FontAwesomeIcon icon={faArrowTrendUp} style={{ color: '#3A2C4A' }} /></td>
+                <td className="  text-center">
                   <button className="px-3 py-1 text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
                   >
                     View
@@ -104,22 +104,22 @@ const Department = () => {
                 </td>
               </tr>
                <tr>
-                <td className=" px-4 py-2 text-center">Ushering</td>
-                <td className=" b px-4 py-2 text-center">12</td>
-                <td className=" px-4 py-2 text-center">50% <FontAwesomeIcon icon={faArrowTrendUp} style={{ color: '#3A2C4A' }} /></td>
-                <td className=" px-4 py-2 text-center">
-                  <button className="px-3 py-1 text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
+                <td className="  text-center">Ushering</td>
+                <td className="  text-center">12</td>
+                <td className="  text-center">50% <FontAwesomeIcon icon={faArrowTrendUp} style={{ color: '#3A2C4A' }} /></td>
+                <td className="  text-center">
+                  <button className=" text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
                   >
                     View
                   </button>
                 </td>
               </tr>
               <tr>
-                <td className=" px-4 py-2 text-center">Media</td>
-                <td className=" b px-4 py-2 text-center">5</td>
-                <td className=" px-4 py-2 text-center">15% <FontAwesomeIcon icon={faArrowTrendUp} style={{ color: '#3A2C4A' }} /></td>
-                <td className=" px-4 py-2 text-center">
-                  <button className="px-3 py-1 text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
+                <td className="  text-center">Media</td>
+                <td className="  text-center">5</td>
+                <td className="  text-center">15% <FontAwesomeIcon icon={faArrowTrendUp} style={{ color: '#3A2C4A' }} /></td>
+                <td className="  text-center">
+                  <button className=" text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
                   >
                     View
                   </button>
@@ -178,12 +178,12 @@ const Department = () => {
         <h1 className="text-2xl font-bold text-center mt-20" style={{ color: '#3A2C4A' }}>Add Department</h1>
         <Link
           to="/department/cdepartment"
-          className="text-black px-4 py-2 rounded flex justify-center items-center" style={{ color: '#3A2C4A' }}
+          className="text-black  rounded flex justify-center items-center" style={{ color: '#3A2C4A' }}
         >
           <FontAwesomeIcon icon={faPlus} className="mr-2 text-2xl pt-1 pb-1 pl-5 pr-5  rounded-2xl" style={{ border: '2px solid #3A2C4A' }} />
         </Link>
         <div className="text-center flex justify-center">
-        <h2 className="text-white px-4 py-2 w-50 h-15 flex items-center justify-center" style={{ background: '#312E87' }}>Previously Added</h2>
+        <h2 className="text-white  w-50 h-15 flex items-center justify-center" style={{ background: '#312E87' }}>Previously Added</h2>
         </div>
       </div>
 
@@ -200,10 +200,10 @@ const Department = () => {
           {tableData.length > 0 ? (
             tableData.map((row, index) => (
               <tr key={index}>
-                <td className=" px-4 py-2 flex items-center justify-center">{row.col1}</td>
-                <td className=" b px-4 py-2 ">{row.col2}</td>
-                <td className=" px-4 py-2">{row.col3}</td>
-                <td className=" px-4 py-2">
+                <td className="  flex items-center justify-center">{row.col1}</td>
+                <td className=" b  ">{row.col2}</td>
+                <td className=" ">{row.col3}</td>
+                <td className=" ">
                   <button
                     onClick={() => handleActionClick(index)}
                     className="px-3 py-1 text-white rounded-2xl h-5 w-20 items-center justify-center flex" style={{ background: '#3A2C4A' }}
@@ -217,7 +217,7 @@ const Department = () => {
             <tr>
               <td
                 colSpan="4"
-                className="text-center border border-gray-300 px-4 py-2"
+                className="text-center border border-gray-300 "
               >
                 No data available
               </td>

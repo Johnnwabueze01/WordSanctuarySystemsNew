@@ -3,3 +3,13 @@
 button{
     cursor: pointer;
 }
+tr, th{
+    height: 40px;
+}
+/*tr{
+    background-color: #a3a2a23a;
+    border-radius: 20px;
+}
+th{
+    background-color: #fff;
+}*/

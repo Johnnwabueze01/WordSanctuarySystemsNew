@@ -8,22 +8,22 @@ import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 const Vmember = () => {
 
   return (
-    <div className="p-8 relative w-screen">
-      <div className="text-center">
-      <h2 className="text-white z-10 relative text-2xl font-bold font-Roboto mt-40">MEMBER</h2>
-      </div>
-      <div className="bg-white m-10 rounded-2xl">
-      <div className="items-center mb-4">
-        <Link
-        to="/members" 
-        >
-        <FontAwesomeIcon icon={faArrowLeft} className="text-black flex absolute ml-5 text-2xl mt-3" />
-        </Link>
-              <div className="text-center flex justify-between ml-20 mr-20">
-                <h2 className= "flex font-bold text-2xl mt-10" style={{ color: '#3a2c4a' }}>Welcome,<p className="text-black font-normal">john</p></h2>
-                <h3 className="font-bold text-1xl mt-10">Central Dashboard</h3>
-              </div>
-        <div className="text-center flex justify-center mt-20">
+   <div className="md:p-8 w-screen">
+         <div className="text-center">
+         <h2 className="text-white z-10 relative text-2xl font-bold font-Roboto mt-40">Member</h2>
+         </div>
+         <div className="bg-white md:rounded-2xl rounded mb-20 relative">
+         <div className="items-center">
+           <Link
+           to="/members" 
+           >
+           <FontAwesomeIcon icon={faArrowLeft} className="text-black flex absolute ml-5 text-2xl mt-3" />
+           </Link>
+                 <div className="text-center flex justify-between md:ml-20 md:mr-20">
+                   <h2 className= "flex font-bold md:text-2xl mt-10" style={{ color: '#3a2c4a' }}>Welcome,<p className="text-black font-normal">john</p></h2>
+                   <h3 className="font-bold text-1xl mt-10">Central Dashboard</h3>
+                 </div>
+        <div className="text-center flex justify-center mt-20 mb-10">
         <FontAwesomeIcon icon={faCircleUser} className="border-1 text-4xl p-5 w-15" style={{
             boxShadow: '1px 1px 1px 0px #333'
         }} />

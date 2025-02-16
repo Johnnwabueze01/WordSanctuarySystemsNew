@@ -16,14 +16,14 @@ const Cdepartment = () => {
         <Link
         to="/department"
         >
-        <FontAwesomeIcon icon={faArrowLeft} className="text-black ml-10 mt-5 text-2xl" />
+        <FontAwesomeIcon icon={faArrowLeft} className="text-black ml-2 md:ml-10 mt-5 text-2xl" />
         </Link>
-              <div className="text-center flex justify-between ml-20 mr-20 mt-1">
-                <h2 className= "flex font-bold text-2xl" style={{ color: '#3a2c4a' }}>Welcome,<p className="text-black font-normal">john</p></h2>
+              <div className="text-center flex justify-between md:ml-20 md:mr-20 mt-1">
+                <h2 className= "flex font-bold md:text-2xl" style={{ color: '#3a2c4a' }}>Welcome,<p className="text-black font-normal">john</p></h2>
                 <h3 className="font-bold text-1xl" style={{ color: '#3A2C4A' }}>Central Dashboard</h3>
               </div>
       </div>
-      <form className="space-y-4 p-20 rounded-3xl relative -mt-20 mr-20 ml-20" style={{ 
+      <form className="space-y-4 p-5 md:p-20 rounded md:rounded-3xl relative mb-20 -mt-20  md:mr-20 md:ml-20" style={{ 
        background: 'linear-gradient(180deg, #5A3970 0%, #1C191E 100%)'
 
         }}>
@@ -55,11 +55,11 @@ const Cdepartment = () => {
             className="border border-gray-300 rounded p-2 w-full bg-white"
           />
         </div>
-        <div className="md:flex gap-5">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label className="block font-bold mb-2 text-white
           ">Access Granted</label>
-          <select name="access granted " id="" className="text-black rounded bg-white w-40 md:w-120 h-13 ">
+          <select name="access granted " id="" className="text-black bg-white h-13 mt-1 w-full rounded-md p-2">
             <option value="1 ">
               option 1
             </option>
@@ -68,7 +68,7 @@ const Cdepartment = () => {
         <div>
           <label className="block font-bold mb-2 text-white
           ">Department Type</label>
-           <select name="department type" id="" className="text-black rounded bg-white w-40 md:w-120 h-13">
+           <select name="department type" id="" className="text-black bg-white h-13 mt-1 w-full rounded-md border border-gray-300 p-2 focus:border-blue-500 focus:ring focus:ring-blue-200">
             <option value="1 ">
               option 1
             </option>
