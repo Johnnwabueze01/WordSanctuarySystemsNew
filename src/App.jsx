@@ -34,42 +34,45 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
         </Routes>
         </div>
-        <div className="text-center mb-0" style={{
-           background:'#3A2C4A'
+        <div className="md:text-center mb-0" style={{
+           background: 'linear-gradient( 180deg, #150529 95.5%, #312E87 100%)'
         }}
         >
           <footer>
-            <div className="text-center ml-30">
+            <div className="md:p-10">
+            <div className="text-center mb-5 mt-5 ml-3 md:ml-30">
             <img src={logo} alt="" className="h-13"/>
             </div>
-            <div className="text-center justify-between text-white">
-              <div className="flex justify-between ml-40 mr-40">
-                <div className="text-center">
-                  <h2>CONNECT WITH US</h2>
-                  <p>Watch Online</p>
-                  <p>Central Prayer</p>
-                  <p>Wealth Nation</p>
-                  <p>Global</p>
-                  <p>Operation One Soul</p>
+            <div className="md:text-center justify-between text-white">
+              <div className="md:flex justify-between md:ml-40 md:mr-40 mb-10">
+                <div className="md:text-center ml-5 mb-10 md:mb-1">
+                  <h2 className="mb-2" style={{fontWeight: 200 }}>CONNECT WITH US</h2>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Watch Online</p>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Central Prayer</p>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Wealth Nation</p>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Global</p>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Operation One Soul</p>
                 </div>
-                <div className="text-center">
-                  <h2>CONNECT WITH US</h2>
-                  <p>Watch Online</p>
-                  <p>Central Prayer</p>
-                  <p>Wealth Nation</p>
-                  <p>Global</p>
-                  <p>Operation One Soul</p>
+                <div className="md:text-center ml-5 mb-10 md:mb-1">
+                  <h2 className="mb-2" style={{fontWeight: 200 }}>FELLOWSHIP WITH US</h2>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Ilorin </p>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Lagos</p>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Abuja</p>
                 </div>
-                <div className="text-center">
-                  <h2>CONNECT WITH US</h2>
-                  <p>Watch Online</p>
-                  <p>Central Prayer</p>
-                  <p>Wealth Nation</p>
-                  <p>Global</p>
-                  <p>Operation One Soul</p>
+                <div className="md:text-center ml-5 mb-10 md:mb-1">
+                  <h2 className="mb-2" style={{fontWeight: 200 }}>RESOURCES</h2>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Life Class</p>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Foundation Training</p>
+                  <p style={{fontWeight: 700,  marginBottom: 10}}>Central Trainings</p>
+                </div>
                 </div>
               </div>
-            {/*<table className="w-full text-white mb-10 md:col-auto">
+              </div>
+              <p className="text-center text-white text-1xl mb-10">Copyright 2025 | www.wordsanctuaryglobal.com | All Rights Reserved | Terms & Conditions | Privacy Policy | Cookies Policy</p>
+            </footer>
+        </div>
+      </div>  
+            /*<table className="w-full text-white mb-10 md:col-auto">
         <thead>
           <tr>
             <th className="text-1xl">CONNECT WITH US</th>
@@ -101,12 +104,8 @@ const App = () => {
             
           </tr>
           </tbody>
-          </table>*/}
-          <p className="text-white text-1xl">Copyright 2025 | www.wordsanctuaryglobal.com | All Rights Reserved | Terms & Conditions | Privacy Policy | Cookies Policy</p>
-            </div>
-            </footer>
-        </div>
-      </div>
+          </table>*/
+           
   );
 };
 

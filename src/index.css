@@ -5,11 +5,5 @@ button{
 }
 tr, th{
     height: 40px;
+    color: #150529;
 }
-/*tr{
-    background-color: #a3a2a23a;
-    border-radius: 20px;
-}
-th{
-    background-color: #fff;
-}*/

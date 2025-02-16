@@ -3,9 +3,14 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
+import background from "/background.jpg"
 import { Link } from "react-router-dom";
 
 const Cdepartment = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
 
   return (
     <div className=" md:p-8 relative w-screen">
@@ -87,10 +92,23 @@ const Cdepartment = () => {
         <div className="text-center flex justify-center">
         <button
           type="submit"
+          onClick={() => setIsOpen(true)}
           className=" text-white border-2 rounded-2xl w-100 h-15"
         >
           Create
         </button>
+        {isOpen && (
+        <div className="fixed inset-0 grid justify-center bg-purple-700 bg-opacity-50">
+          <img src={background} alt="50x50" className="h-130 absolute w-screen brightness-35" />
+          <div className="flex flex-col items-center justify-center gap-4 rounded-lg  p-8 shadow-lg relative">
+          <FontAwesomeIcon icon={faCheck} className="text-center text-8xl text-white p-8" style={{
+                           background: '#3A2D4A',
+                           borderRadius: '50%'
+                       }} />
+            <p className="text-2xl font-semibold text-white">Department Created</p>
+          </div>
+        </div>
+      )}
         </div>
       </form>
     </div>

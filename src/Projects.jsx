@@ -1,10 +1,14 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
+import background from "/background.jpg"
 
 
 const Projects = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="md:p-8 w-screen">
@@ -25,15 +29,32 @@ const Projects = () => {
     
       </div>
       <div className="tex-center flex justify-center mt-20">
-        <p className="md:p-20 pt-10 pb-10 pl-5 pr-5 md:mb-40 mb-20" style={{
+        <p className="md:p-20 pt-10 pb-10 pl-5 pr-5 md:mb-40 mb-20" 
+        style={{
             border: '1px solid #3A2D4A'
         }}>Projects Catalog will be displayed here</p>
       </div>
       <div className="text-center">
-        <button className="mb-10 w-40 h-10 rounded bg-black text-white" style={{
+        <button 
+        type="submit"
+        onClick={() => setIsOpen(true)}
+        className="mb-10 w-40 h-10 rounded bg-black text-white" 
+        style={{
             boxShadow: '4px 4px 4px 0px #3A2D4A40'
 
-        }}>Save</button>
+        }}>Save</button> 
+        {isOpen && (
+        <div className="fixed inset-0 grid justify-center bg-purple-700 bg-opacity-50">
+          <img src={background} alt="50x50" className="h-130 absolute w-screen brightness-35" />
+          <div className="flex flex-col items-center justify-center gap-4 rounded-lg  p-8 shadow-lg relative">
+          <FontAwesomeIcon icon={faCheck} className="text-center text-8xl text-white p-8" style={{
+                           background: '#3A2D4A',
+                           borderRadius: '50%'
+                       }} />
+            <p className="text-2xl font-semibold text-white">Department Created</p>
+          </div>
+        </div>
+      )}
       </div>
     </div>
     </div>
